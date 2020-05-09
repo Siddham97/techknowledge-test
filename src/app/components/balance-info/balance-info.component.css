@@ -1,0 +1,137 @@
+.ledgerCard {
+  position: relative;
+  padding-top: 35px;
+  min-height: 650px;
+  margin-left: 6%;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.box-container-avail-bal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  background-color: rgb(253, 212, 219);
+  height: 100px;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+
+.box-container-cred {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  background-color: rgb(194, 243, 194);
+  height: 100px;
+  border-radius: 5px;
+  margin-top: 3%;
+}
+
+.box-container-deb {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  background-color: rgb(250, 174, 174);
+  height: 100px;
+  border-radius: 5px;
+  margin-top: 3%;
+}
+
+.box-subText {
+  font-size: small;
+  margin-top: -10px;
+}
+
+.button-container {
+  margin-top: 3%;
+  max-width: 200px;
+}
+
+.support-container {
+  position: absolute;
+  bottom: 0;
+  left: 30%;
+  /* right: 20%; */
+}
+
+.support-btn {
+  width: 150px;
+  border-radius: 60px;
+}
+
+.box-text {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.heading {
+  font-size: 25px;
+  font-weight: 800;
+  margin-bottom: 6%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  font-family: Lalezar;
+}
+
+@media only screen and (max-width: 1400px) {
+  .ledgerCard {
+    position: relative;
+    padding-top: 5%;
+    min-height: 650px;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .support-container {
+    position: absolute;
+    left: unset;
+    bottom: 20px;
+    right: 20px;
+  }
+}
+
+.dollar-icon {
+  display: flex;
+  align-items: center;
+  width: 50px;
+  justify-content: center;
+  height: 50px;
+  background-color: white;
+  vertical-align: center;
+  border-radius: 100%;
+  margin-top: 7%;
+  margin-right: 7px;
+}
+
+.dollar-icon-pink {
+  border: solid 10px deeppink;
+  color: deeppink;
+}
+
+.dollar-icon-green {
+  border: solid 10px green;
+  color: green;
+}
+
+.dollar-icon-red {
+  border: solid 10px rgb(250, 129, 129);
+  color: rgb(250, 129, 129);
+}
+
+.dollar-wrapper {
+  display: flex;
+  flex-direction: row;
+}

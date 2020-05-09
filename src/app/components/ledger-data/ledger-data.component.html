@@ -1,0 +1,33 @@
+<div class="ledgerCard">
+  <div class="row no-gutters flex-container">
+    <div class="col-md-9">
+      <div class="heading-Top">Ledger</div>
+    </div>
+    <div class="col-md-3">
+      <select (change)="fetchRecords($event)">
+        <option value="month" selected>LAST 30 DAYS </option>
+        <option value="week">LAST WEEK </option>
+        <option value="year">LAST YEAR</option>
+      </select>
+    </div>
+  </div>
+
+  <mat-card class="mb-4">
+    <div class="row cardTitle">
+      <div class="col-5"><div class="heading1">Particulars</div></div>
+      <div class="col-2"><div class="heading">Credit</div></div>
+      <div class="col-2"><div class="heading">Debit</div></div>
+      <div class="col-3"><div class="heading3">Balance</div></div>
+    </div>
+    <div *ngIf="this.data.response.transaction_records.length">
+      <div *ngFor="let item of this.data.response.transaction_records">
+        <app-ledger-item [item]="item"></app-ledger-item>
+      </div>
+    </div>
+    <div *ngIf="!this.data.response.transaction_records.length">
+      <div class="no-record">
+        You have no transactions
+      </div>
+    </div>
+  </mat-card>
+</div>

@@ -1,0 +1,115 @@
+.ledgerCard {
+  max-width: 1000px;
+  padding-left: 10%;
+  padding-top: 40px;
+}
+
+mat-card {
+  padding-bottom: 0;
+}
+
+select {
+  padding: 10px 40px;
+  background: rgb(250, 242, 225);
+  color: black;
+  text-shadow: 0 1px 0 rgb(253, 246, 232);
+  height: 50px;
+  border-radius: 8px;
+  font-size: 19px;
+  font-weight: 600;
+  border: solid 2px orange;
+}
+
+.mat-card:not([class*="mat-elevation-z"]) {
+  box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 1), 0 1px 1px 0 rgba(0, 0, 0, 1),
+    0 1px 3px 0 rgba(0, 0, 0, 1);
+}
+
+.cardTitle {
+  font-size: 20px;
+  font-weight: 600;
+  font-weight: 700;
+  border-bottom: 1px solid lightgrey;
+}
+
+.heading-Top {
+  font-size: 25px;
+  font-weight: 800;
+  margin-bottom: 6%;
+}
+
+.heading {
+  font-size: 25px;
+  font-weight: 800;
+  margin-bottom: 6%;
+  display: flex;
+  justify-content: center;
+}
+
+.heading1 {
+  font-size: 25px;
+  font-weight: 800;
+  margin-bottom: 6%;
+  padding-left: 7%;
+}
+
+.heading3 {
+  font-size: 25px;
+  font-weight: 800;
+  margin-bottom: 6%;
+  padding-left: 35px;
+}
+
+@media only screen and (max-width: 1400px) {
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+  }
+  select {
+    margin-bottom: 4%;
+    width: 228px;
+    background: rgb(253, 246, 232);
+    color: black;
+    text-shadow: 0 1px 0 rgb(250, 242, 228);
+    height: 50px;
+    border-radius: 8px;
+    font-size: 19px;
+    font-weight: 600;
+  }
+  .heading {
+    font-size: 10px;
+    font-weight: 800;
+    margin-bottom: 3%;
+  }
+
+  .heading1 {
+    font-size: 10px;
+    font-weight: 800;
+    margin-bottom: 6%;
+    padding-left: 7%;
+  }
+
+  .heading3 {
+    font-size: 10px;
+    font-weight: 800;
+    margin-bottom: 6%;
+    padding-left: 0px;
+  }
+
+  .ledgerCard {
+    max-width: 1000px;
+    padding-left: 5%;
+    padding-top: 8%;
+    padding-right: 5%;
+  }
+}
+
+.heading {
+  font-family: Lalezar;
+}
+
+.no-record {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}

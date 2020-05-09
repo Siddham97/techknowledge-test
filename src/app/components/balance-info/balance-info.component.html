@@ -1,0 +1,56 @@
+<div class="ledgerCard">
+  <div class="heading">Balance Info</div>
+  <div class="box-container-avail-bal">
+    <div class="dollar-wrapper">
+      <div class="dollar-icon dollar-icon-pink">
+        <i class="fa fa-dollar-sign"></i>
+      </div>
+      <div class="">
+        <div class="flex-container">
+          <span class="box-text">{{ data.response.available_balance }}</span>
+          <span class="box-subText">Available Balance</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="box-container-cred">
+    <div class="dollar-wrapper">
+      <div class="dollar-icon dollar-icon-green">
+        <i class="fa fa-dollar-sign"></i>
+      </div>
+      <div class="">
+        <div class="flex-container">
+          <span class="box-text">{{
+            data.response.total_tokens_credited
+          }}</span>
+          <span class="box-subText">Total Credited</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="box-container-deb">
+    <div class="dollar-wrapper">
+      <div class="dollar-icon dollar-icon-red">
+        <i class="fa fa-dollar-sign"></i>
+      </div>
+      <div class="">
+        <div class="flex-container">
+          <span class="box-text">{{ data.response.total_tokens_debited }}</span>
+          <span class="box-subText">Total Debited</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="button-container">
+    <button type="button" class="btn btn-primary btn-block">
+      SPEND TOKENS
+    </button>
+  </div>
+
+  <div class="support-container">
+    <button type="button" class="support-btn btn btn-primary btn-block">
+      <i class="fas fa-headset"></i>
+      SUPPORT
+    </button>
+  </div>
+</div>
