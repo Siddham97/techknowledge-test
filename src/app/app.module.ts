@@ -20,6 +20,8 @@ import { LedgerItemComponent } from "./components/ledger-data/ledger-item/ledger
 import { ReactiveFormsModule, FormsModule } from "@angular/forms";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { HttpClientModule } from "@angular/common/http";
+import { SidenavComponent } from './components/sidenav/sidenav.component';
+import { RangeBarChartComponent } from './components/range-bar-chart/range-bar-chart.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +30,8 @@ import { HttpClientModule } from "@angular/common/http";
     LedgerDataComponent,
     LedgerItemComponent,
     BalanceInfoComponent,
+    SidenavComponent,
+    RangeBarChartComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,15 @@
+.sidenav-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  font-size: 25px;
+  font-weight: 800;
+  margin-bottom: 6%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  font-family: Lalezar;
+}
