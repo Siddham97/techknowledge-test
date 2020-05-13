@@ -9,6 +9,7 @@ declare let google: any;
 })
 export class RangeBarChartComponent implements OnInit {
   private google: any;
+
   get json() {
     return this.dataProvider.json;
   }
@@ -19,27 +20,12 @@ export class RangeBarChartComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.processingData();
+    this.initialiseGanttChart();
   }
 
-  processingData() {
-    for (let item of this.json.graph_data) {
-      let arr = [];
-      let startDate = new Date(item.start_date);
-      let endDate = new Date(item.end_date);
+  initialiseGanttChart() {
+    this.seriesData = this.dataProvider.processingData();
 
-      arr.push((Math.random() * 1234).toString());
-      arr.push(null);
-      arr.push(item.resource_name);
-      arr.push(startDate);
-      arr.push(endDate);
-      arr.push(null);
-      arr.push(parseInt(item.progress));
-      arr.push(null);
-      this.seriesData.push(arr);
-    }
-
-    console.log(this.seriesData);
     this.google.charts.load("current", {
       packages: ["corechart", "table", "gantt"],
     });

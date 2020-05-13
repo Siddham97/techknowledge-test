@@ -26,4 +26,27 @@ export class DataProviderService {
       this.data = data;
     });
   }
+
+  processingData() {
+    const response = [];
+
+    for (let item of this.json.graph_data) {
+      let arr = [];
+      let startDate = new Date(item.start_date);
+      let endDate = new Date(item.end_date);
+      const data = [
+        (Math.random() * 1234).toString(),
+        "",
+        item.resource_name,
+        startDate,
+        endDate,
+        null,
+        item.progress,
+        null,
+      ];
+      response.push(data);
+    }
+
+    return response;
+  }
 }
